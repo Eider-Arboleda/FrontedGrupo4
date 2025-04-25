@@ -1,0 +1,80 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RACEFORCE - carreras y carros</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="Arial Narrow">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        RACEFORCE
+        <div class="barra">Hola, piloto | Fecha: <span id="fecha"></span></div>
+    </header>
+    <div class="container">
+        <div class="panel">
+            <h2>Nueva Carrera</h2>
+            
+            <div class="input-group">
+                <input type="text" id="lugarCircuito" placeholder="Circuito">
+                <input type="text" id="fechaCircuito" placeholder="Fecha">
+                <button onclick="agregarCircuito()">Agregar</button>
+            </div>
+            <div id="listaCarreras"></div>
+            
+            <div class="card">
+                <span>Sirverstone - 25/03 - Estado: Programada</span>
+                <div class="actions">
+                    <button title="Editar">✏️</button>
+                    <button title="Eliminar">🗑️</button>
+                    <button title="Cambiar Estado">🔄</button>
+                </div>
+            </div>
+            <div class="card">
+                <span>Monza - 01/04 - Estado: En curso</span>
+                <div class="actions">
+                    <button title="Editar">✏️</button>
+                    <button title="Eliminar">🗑️</button>
+                    <button title="Cambiar Estado">🔄</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+            <h2>Vehiculo de Competencia</h2>
+            <div class="input-group">
+                <input type="text" id="tipoCarro" placeholder="Mdelo">
+                <input type="text" id="numeroCarro" placeholder="Numero">
+                <button onclick="agregarCarro()">Agregar</button>
+            </div>
+            <div id="listaCarros"></div>
+
+            
+            <div class="card">
+                <span>Ferrari SF90 - #7 - Estado: Disponible</span>
+                <div class="actions">
+                    <button title="Editar">✏️</button>
+                    <button title="Eliminar">🗑️</button>
+                    <button title="Cambiar Estado">🔄</button>
+                </div>
+            </div>
+            <div class="card">
+                <span>Reed Bull RB16B - #33 - Estado: En uso</span>
+                <div class="actions">
+                    <button title="Editar">✏️</button>
+                    <button title="Eliminar">🗑️</button>
+                    <button title="Cambiar Estado">🔄</button>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

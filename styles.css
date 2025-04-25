@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: white;
+    color: #2d3436;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+}
+.barra{
+    font-size: 0.5em;
+}
+.container {
+    font-size: 0.9em;
+    max-width: 720px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+.panel {
+    background-color: #ffffff;
+    padding: 20px;
+    
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    color: black;
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #b2bec3;
+    border-radius: 6px;
+    font-size: 1em;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #555555;
+}
+.card {
+    color: rgb(65, 65, 65);
+    border-bottom: 1px solid rgb(170, 170, 170);
+
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.actions button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    margin-left: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.actions button:hover {
+    color: #2d3436;
+}
+@media (max-width: 768px) {
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+}
